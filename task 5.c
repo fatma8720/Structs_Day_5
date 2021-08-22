@@ -13,7 +13,8 @@ struct Student_structure {
 void Calcu_GPA (struct Student_structure student){
     int sum_credit=0;
 	float sum_GPA=0; 
-    for (int i=0;i<=1;i++){
+	int i;
+    for (i=0;i<=1;i++){
       sum_GPA+=(student.Array_of_Courses[i].Credit_Hours*student.Array_of_Courses[i].Student_Score);
 	  sum_credit+=student.Array_of_Courses[i].Credit_Hours;
 	  }
